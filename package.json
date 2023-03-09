@@ -54,6 +54,17 @@
     "onLanguage:astro"
   ],
   "contributes": {
+    "rootPatterns": [
+      {
+        "filetype": "astro",
+        "patterns": [
+          "astro.config.js",
+          "astro.config.mjs",
+          "astro.config.cjs",
+          "astro.config.ts"
+        ]
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "coc-astro configuration",
