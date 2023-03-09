@@ -10,7 +10,11 @@ Astro extension for [coc.nvim](https://github.com/neoclide/coc.nvim)
 
 **CocInstall**:
 
-Preparation in progress...
+```vim
+:CocInstall @yaegassy/coc-astro
+```
+
+> scoped packages
 
 **e.g. vim-plug**:
 
