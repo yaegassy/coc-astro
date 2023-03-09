@@ -1,0 +1,292 @@
+{
+  "name": "@yaegassy/coc-astro",
+  "version": "0.0.1",
+  "description": "Astro extension for coc.nvim",
+  "author": "yaegassy <yosstools@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "coc.nvim",
+    "astro",
+    "typescript",
+    "javascript",
+    "vue",
+    "svelte",
+    "Static site generator",
+    "vim",
+    "neovim"
+  ],
+  "engines": {
+    "coc": "^0.0.80"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaegassy/coc-astro"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint src --ext ts",
+    "clean": "rimraf lib",
+    "watch": "node esbuild.js --watch",
+    "build": "node esbuild.js",
+    "prepare": "node esbuild.js"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120,
+    "semi": true
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.4",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "coc.nvim": "^0.0.82",
+    "esbuild": "^0.16.17",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "rimraf": "^3.0.2"
+  },
+  "activationEvents": [
+    "onLanguage:astro"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "coc-astro configuration",
+      "properties": {
+        "astro.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable coc-astro extension."
+        },
+        "astro.useWorkspaceTsdk": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use workspace (project) detected tsLibs in astro. if false, use coc-astro's built-in tsLibs."
+        },
+        "astro.tsLocale": {
+          "type": "string",
+          "enum": [
+            "cs",
+            "de",
+            "es",
+            "fr",
+            "it",
+            "ja",
+            "ko",
+            "en",
+            "pl",
+            "pt-br",
+            "ru",
+            "tr",
+            "zh-cn",
+            "zh-tw"
+          ],
+          "default": "en",
+          "description": "Sets the locale used to report diagnostics message from typescript."
+        },
+        "astro.autoClosingTags": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable autoClosing of HTML tags."
+        },
+        "astro.language-server.ls-path": {
+          "type": "string",
+          "title": "Language Server: Path",
+          "description": "Path to the language server executable. You won't need this in most cases, set this only when needing a specific version of the language server"
+        },
+        "astro.language-server.runtime": {
+          "scope": "application",
+          "type": "string",
+          "title": "Language Server: Runtime",
+          "description": "Path to the node executable used to execute the language server. You won't need this in most cases"
+        },
+        "astro.typescript.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "TypeScript",
+          "description": "Enable TypeScript features"
+        },
+        "astro.typescript.allowArbitraryAttributes": {
+          "type": "boolean",
+          "default": false,
+          "title": "TypeScript: Allow arbitrary attributes on HTML elements",
+          "description": "Enable the usage of non-standard HTML attributes, such as the ones added by AlpineJS or petite-vue"
+        },
+        "astro.typescript.diagnostics.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "TypeScript: Diagnostics",
+          "description": "Enable diagnostic messages for TypeScript"
+        },
+        "astro.typescript.hover.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "TypeScript: Hover Info",
+          "description": "Enable hover info for TypeScript"
+        },
+        "astro.typescript.documentSymbols.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "TypeScript: Symbols in Outline",
+          "description": "Enable document symbols for TypeScript"
+        },
+        "astro.typescript.completions.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "TypeScript: Completions",
+          "description": "Enable completions for TypeScript"
+        },
+        "astro.typescript.definitions.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "TypeScript: Go to Definition",
+          "description": "Enable go to definition for TypeScript"
+        },
+        "astro.typescript.codeActions.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "TypeScript: Code Actions",
+          "description": "Enable code actions for TypeScript"
+        },
+        "astro.typescript.signatureHelp.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "TypeScript: Signature Help",
+          "description": "Enable signature help (parameter hints) for TypeScript"
+        },
+        "astro.typescript.rename.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "TypeScript: Rename",
+          "description": "Enable rename functionality for JS/TS variables inside Astro files"
+        },
+        "astro.typescript.semanticTokens.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "TypeScript: Semantic Tokens",
+          "description": "Enable semantic tokens (used for semantic highlighting) for TypeScript."
+        },
+        "astro.html.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "HTML",
+          "description": "Enable HTML features"
+        },
+        "astro.html.hover.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "HTML: Hover Info",
+          "description": "Enable hover info for HTML"
+        },
+        "astro.html.completions.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "HTML: Completions",
+          "description": "Enable completions for HTML"
+        },
+        "astro.html.completions.emmet": {
+          "type": "boolean",
+          "default": true,
+          "title": "HTML: Emmet Completions",
+          "description": "Enable Emmet completions for HTML"
+        },
+        "astro.html.tagComplete.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "HTML: Tag Completion",
+          "description": "Enable tag completion for HTML"
+        },
+        "astro.html.documentSymbols.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "HTML: Symbols in Outline",
+          "description": "Enable document symbols for CSS"
+        },
+        "astro.css.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "CSS",
+          "description": "Enable CSS features"
+        },
+        "astro.css.hover.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "CSS: Hover Info",
+          "description": "Enable hover info for CSS"
+        },
+        "astro.css.completions.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "CSS: Completions",
+          "description": "Enable completions for CSS"
+        },
+        "astro.css.completions.emmet": {
+          "type": "boolean",
+          "default": true,
+          "title": "CSS: Emmet Completions",
+          "description": "Enable Emmet completions for CSS"
+        },
+        "astro.css.documentColors.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "CSS: Document Colors",
+          "description": "Enable color picker for CSS"
+        },
+        "astro.css.documentSymbols.enabled": {
+          "type": "boolean",
+          "default": true,
+          "title": "CSS: Symbols in Outline",
+          "description": "Enable document symbols for CSS"
+        },
+        "astro.format.indentFrontmatter": {
+          "deprecationMessage": "The `astro.format` settings are deprecated. Formatting is now powered by Prettier and can be configured through a Prettier configuration file.",
+          "type": "boolean",
+          "default": false,
+          "title": "Formatting: Indent frontmatter",
+          "description": "Indent the formatter by one level of indentation"
+        },
+        "astro.format.newLineAfterFrontmatter": {
+          "deprecationMessage": "The `astro.format` settings are deprecated. Formatting is now powered by Prettier and can be configured through a Prettier configuration file.",
+          "type": "boolean",
+          "default": true,
+          "title": "Formatting: Add line return after the frontmatter",
+          "description": "Add a line return between the frontmatter and the template"
+        },
+        "astro.trace.server": {
+          "scope": "window",
+          "type": "string",
+          "enum": [
+            "off",
+            "messages",
+            "verbose"
+          ],
+          "default": "off",
+          "description": "Traces the communication between VS Code and the language server."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "astro.restartLanguageServer",
+        "title": "Astro: Restart Language Server"
+      },
+      {
+        "command": "astro.showTSXOutput",
+        "title": "Astro: Debug: Show TSX Output"
+      },
+      {
+        "command": "astro.findFileReferences",
+        "title": "Astro: Find File References"
+      }
+    ]
+  },
+  "dependencies": {
+    "@astrojs/language-server": "0.29.6",
+    "typescript": "4.9.5"
+  }
+}
