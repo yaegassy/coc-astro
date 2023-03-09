@@ -1,5 +1,6 @@
 import { ExtensionContext, LanguageClient, ServerOptions, TransportKind, workspace } from 'coc.nvim';
 
+import * as fs from 'fs';
 import * as path from 'path';
 
 import * as fileReferencesFeature from './features/fileReferences';
@@ -9,16 +10,21 @@ import * as tagClosingFeature from './features/tagClosing';
 import * as tsVersion from './features/tsVersion';
 import { getInitOptions } from './shared';
 
+let serverModule: string;
+
 export async function activate(context: ExtensionContext): Promise<void> {
   if (!workspace.getConfiguration('astro').get('enable')) return;
 
   const runtimeConfig = workspace.getConfiguration('astro.language-server');
 
-  const serverModule = context.asAbsolutePath(
-    // MEMO: 'node_modules/@astrojs/language-server/dist/server.js' will not start properly.
-    //path.join('node_modules', '@astrojs', 'language-server', 'dist', 'server.js')
-    path.join('node_modules', '@astrojs', 'language-server', 'bin', 'nodeServer.js')
-  );
+  const serverPath = runtimeConfig.get<string>('ls-path');
+  if (serverPath && fs.existsSync(serverPath)) {
+    serverModule = serverPath;
+  } else {
+    serverModule = context.asAbsolutePath(
+      path.join('node_modules', '@astrojs', 'language-server', 'bin', 'nodeServer.js')
+    );
+  }
 
   const port = 6040;
   const debugOptions = { execArgv: ['--nolazy', '--inspect=' + port] };
