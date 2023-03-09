@@ -2,6 +2,8 @@
 
 > fork from a [astro-vscode](https://github.com/withastro/language-tools/tree/main/packages/vscode)
 
+Astro extension for [coc.nvim](https://github.com/neoclide/coc.nvim)
+
 ## Install
 
 **CocInstall**:
