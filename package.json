@@ -27,6 +27,7 @@
     "access": "public"
   },
   "scripts": {
+    "snippets": "curl -o snippets/astro.code-snippets https://raw.githubusercontent.com/withastro/language-tools/main/packages/vscode/languages/astro.code-snippets",
     "lint": "eslint src --ext ts",
     "clean": "rimraf lib",
     "watch": "node esbuild.js --watch",
@@ -63,6 +64,12 @@
           "astro.config.cjs",
           "astro.config.ts"
         ]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "astro",
+        "path": "./snippets/astro.code-snippets"
       }
     ],
     "configuration": {
