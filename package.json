@@ -297,7 +297,7 @@
     ]
   },
   "dependencies": {
-    "@astrojs/language-server": "0.29.6",
+    "@astrojs/language-server": "0.29.8",
     "typescript": "4.9.5"
   }
 }
