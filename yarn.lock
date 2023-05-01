@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.3.2.tgz#94d86e2a429f18d6816a33733b3f3047c7ad308f"
   integrity sha512-W/2Mdsq75ruK31dPVlXLdvAoknYDcm6+zXiFToSzQWI7wZqqR+51XTFgx90ojYbefk7z4VOJSVtZBz2pA82F5A==
 
-"@astrojs/language-server@0.29.8":
-  version "0.29.8"
-  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-0.29.8.tgz#deee6ac379033c97a77f5ab8cf5297f60873171b"
-  integrity sha512-Wbh6yPbk7MA4x+TDlhR5WnbIfx+K7oTl8iFUSYw2SsYvB8nHqpvOfQgPUoxPlyG4mowPIoRxkDswuYiNlNCo/A==
+"@astrojs/language-server@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-1.0.0.tgz#913db5df29d42e8b5e718f15ba0b7fa0569bf52e"
+  integrity sha512-oEw7AwJmzjgy6HC9f5IdrphZ1GVgfV/+7xQuyf52cpTiRWd/tJISK3MsKP0cDkVlfodmNABNFnAaAWuLZEiiiA==
   dependencies:
     "@astrojs/compiler" "^1.3.2"
     "@jridgewell/trace-mapping" "^0.3.14"
