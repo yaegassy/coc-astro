@@ -304,7 +304,7 @@
     ]
   },
   "dependencies": {
-    "@astrojs/language-server": "1.0.4",
+    "@astrojs/language-server": "1.0.5",
     "typescript": "5.0.4"
   }
 }
