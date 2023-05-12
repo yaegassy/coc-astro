@@ -30,6 +30,51 @@ The "filetype" must be `astro` for this extension to work.
 
 Install "astro" related plugin. (e.g. [vim-astro](https://github.com/wuelnerdotexe/vim-astro) or [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)).
 
+### How to set up TypeScript in your Astro project for coc.nvim
+
+1. You need [coc-tsserver](https://github.com/neoclide/coc-tsserver). Please install it if you haven't already.
+
+1. Install `@astrojs/ts-plugin` in your project.
+
+   ```bash
+   # npm
+   npm install @astrojs/ts-plugin
+   # or yarn
+   yarn add @astrojs/ts-plugin
+   # or pnpm
+   pnpm install @astrojs/ts-plugin
+   ```
+
+1. Add the configuration to use `@astrojs/ts-plugin` in your `tsconfig.json` file. Also, add the configuration `"jsx": "preserve"`.
+
+   ```jsonc
+   {
+     // ...snip
+     "compilerOptions": {
+       "plugins": [
+         {
+           "name": "@astrojs/ts-plugin"
+         },
+       ],
+       "jsx": "preserve"
+     }
+   }
+   ```
+
+1. Please place the `.vim/coc-setting.json` file in the project root and set the configuration for `"tsserver.useLocalTsdk": true`.
+
+   ```jsonc
+   {
+     "tsserver.useLocalTsdk": true
+   }
+   ```
+
+---
+
+Please check the following URL of the official Astro website for further information.
+
+- <https://docs.astro.build/en/guides/typescript/>
+
 ## Configuration options
 
 - `astro.enable`: Enable coc-astro extension, default: `true`
