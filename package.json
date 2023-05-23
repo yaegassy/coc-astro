@@ -301,10 +301,17 @@
         "command": "astro.findFileReferences",
         "title": "Astro: Find File References"
       }
+    ],
+    "typescriptServerPlugins": [
+      {
+        "name": "@astrojs/ts-plugin",
+        "enableForWorkspaceTypeScriptVersions": true
+      }
     ]
   },
   "dependencies": {
     "@astrojs/language-server": "1.0.5",
+    "@astrojs/ts-plugin": "1.0.6",
     "typescript": "5.0.4"
   }
 }
