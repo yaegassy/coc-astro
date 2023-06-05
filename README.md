@@ -44,7 +44,7 @@ In coc.nvim, it is recommended to install [watchman](https://facebook.github.io/
 
 - See: <https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions>
 
-If you have difficulty installing `watchman`, you can use `coc-astro` without `watchman`, but you may not be able to immediately use volar's IntelliSense with the newly added files.
+If you have difficulty installing `watchman`, you can use `coc-astro` without `watchman`, but you may not be able to immediately use IntelliSense with the newly added files.
 
 In this case, please execute the command to restart the language server.
 
