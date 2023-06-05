@@ -36,6 +36,20 @@ Install "astro" related plugin. (e.g. [vim-astro](https://github.com/wuelnerdote
 
 1. `coc-astro` has a setting to use `@astrojs/ts-plugin` in the extension as well as `astro-vscode`, so you can use typescript as it is.
 
+## [RECOMMENDED] Additional installation of "watchman"
+
+In the `@astrojs/language-server` used by `coc-astro`, it utilizes the `workspace/didChangeWatchedFiles` notification to watch files within the project.
+
+In coc.nvim, it is recommended to install [watchman](https://facebook.github.io/watchman/) in order to utilize this feature.
+
+- See: <https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions>
+
+If you have difficulty installing `watchman`, you can use `coc-astro` without `watchman`, but you may not be able to immediately use volar's IntelliSense with the newly added files.
+
+In this case, please execute the command to restart the language server.
+
+- `:CocRestart`
+
 ## Configuration options
 
 - `astro.enable`: Enable coc-astro extension, default: `true`
