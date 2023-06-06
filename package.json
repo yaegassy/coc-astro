@@ -290,10 +290,6 @@
     },
     "commands": [
       {
-        "command": "astro.restartLanguageServer",
-        "title": "Astro: Restart Language Server"
-      },
-      {
         "command": "astro.findFileReferences",
         "title": "Astro: Find File References"
       }
