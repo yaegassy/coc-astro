@@ -107,6 +107,11 @@
           "default": "en",
           "description": "Sets the locale used to report diagnostics message from typescript."
         },
+        "astro.autoCreateQuotes": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable auto creation of quotes for HTML attribute assignment."
+        },
         "astro.autoClosingTags": {
           "type": "boolean",
           "default": true,
