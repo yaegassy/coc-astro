@@ -297,6 +297,10 @@
       {
         "command": "astro.findFileReferences",
         "title": "Astro: Find File References"
+      },
+      {
+        "command": "astro.reloadProject",
+        "title": "Astro: Reload Project"
       }
     ],
     "typescriptServerPlugins": [

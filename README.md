@@ -63,6 +63,7 @@ Other settings have the same configuration as [astro-vscode](https://github.com/
 ## Commands
 
 - `astro.findFileReferences`: Astro: Find File References
+- `astro.reloadProject`: Astro: Reload Project
 
 ## Thanks
 
