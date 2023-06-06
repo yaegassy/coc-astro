@@ -62,7 +62,6 @@ Other settings have the same configuration as [astro-vscode](https://github.com/
 ## Commands
 
 - `astro.restartLanguageServer`: Astro: Restart Language Server
-- `astro.showTSXOutput`: Astro: Debug: Show TSX Output
 - `astro.findFileReferences`: Astro: Find File References
 
 ## Thanks

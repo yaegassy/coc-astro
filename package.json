@@ -294,10 +294,6 @@
         "title": "Astro: Restart Language Server"
       },
       {
-        "command": "astro.showTSXOutput",
-        "title": "Astro: Debug: Show TSX Output"
-      },
-      {
         "command": "astro.findFileReferences",
         "title": "Astro: Find File References"
       }
