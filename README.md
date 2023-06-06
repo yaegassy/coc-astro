@@ -54,16 +54,16 @@ In this case, please execute the command to restart the language server.
 
 - `astro.enable`: Enable coc-astro extension, default: `true`
 - `astro.useWorkspaceTsdk`: Use workspace (project) detected tsLibs in astro. if false, use coc-astro's built-in tsLibs, default: `false`
-- `astro.tsLocale`: Sets the locale used to report diagnostics message from typescript, valid option: `["cs", "de", "es", "fr", "it", "ja", "ko", "en", "pl", "pt-br", "ru", "tr", "zh-cn", "zh-tw"]`, default: `"en"`
+- `astro.autoCreateQuotes`: Enable/disable auto creation of quotes for HTML attribute assignment, default: `true`
 - `astro.autoClosingTags`: Enable/disable autoClosing of HTML tags, default: `true`
-
-Other settings have the same configuration as [astro-vscode](https://github.com/withastro/language-tools/tree/main/packages/vscode). Check the configuration section of [package.json](./package.json).
+- `astro.language-server.ls-path`: Path to the language server executable. You won't need this in most cases, set this only when needing a specific version of the language server, default: `null`
+- `astro.language-server.runtime`: Path to the node executable used to execute the language server. You won't need this in most cases, default: `null`
+- `astro.trace.server`: Traces the communication between coc.nvim and the language server, valid option: `["off", "messages", "verbose"]`, default: `"off"`
 
 ## Commands
 
-- `astro.restartLanguageServer`: Astro: Restart Language Server
-- `astro.showTSXOutput`: Astro: Debug: Show TSX Output
 - `astro.findFileReferences`: Astro: Find File References
+- `astro.reloadProject`: Astro: Reload Project
 
 ## Thanks
 

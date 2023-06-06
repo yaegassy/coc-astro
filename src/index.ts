@@ -1,14 +1,21 @@
-import { ExtensionContext, LanguageClient, ServerOptions, TransportKind, workspace } from 'coc.nvim';
+import {
+  ExtensionContext,
+  LanguageClient,
+  ServerOptions,
+  TransportKind,
+  workspace,
+  LanguageClientOptions,
+} from 'coc.nvim';
+
+import { DiagnosticModel, InitializationOptions } from '@volar/language-server';
 
 import * as fs from 'fs';
 import * as path from 'path';
 
-import * as fileReferencesFeature from './features/fileReferences';
-import * as restartLanguageServerFeature from './features/restartLanguageServer';
-import * as showTSXOutputFeature from './features/showTSXOutput';
-import * as tagClosingFeature from './features/tagClosing';
 import * as tsVersion from './features/tsVersion';
-import { getInitOptions } from './shared';
+import * as autoInsertionFeature from './features/autoInsertion';
+import * as fileReferencesFeature from './features/fileReferences';
+import * as reloadProjectFeature from './features/reloadProject';
 
 let serverModule: string;
 
@@ -26,11 +33,15 @@ export async function activate(context: ExtensionContext): Promise<void> {
     );
   }
 
-  const port = 6040;
-  const debugOptions = { execArgv: ['--nolazy', '--inspect=' + port] };
+  const runOptions = { execArgv: [] };
+  const debugOptions = { execArgv: ['--nolazy', '--inspect=' + 6009] };
 
   const serverOptions: ServerOptions = {
-    run: { module: serverModule, transport: TransportKind.ipc },
+    run: {
+      module: serverModule,
+      transport: TransportKind.ipc,
+      options: runOptions,
+    },
     debug: {
       module: serverModule,
       transport: TransportKind.ipc,
@@ -44,14 +55,21 @@ export async function activate(context: ExtensionContext): Promise<void> {
     serverOptions.debug.runtime = serverRuntime;
   }
 
-  const typescript = tsVersion.getCurrentTsPaths(context);
-  const clientOptions = getInitOptions('node', typescript);
+  const initializationOptions: InitializationOptions = {
+    typescript: tsVersion.getCurrentTsPaths(context),
+    diagnosticModel: DiagnosticModel.Pull,
+  };
+
+  const clientOptions: LanguageClientOptions = {
+    documentSelector: [{ language: 'astro' }],
+    initializationOptions,
+  };
+
   const client = new LanguageClient('astro', 'Astro', serverOptions, clientOptions);
 
   client.start();
 
-  restartLanguageServerFeature.register(context, client);
-  tagClosingFeature.register(context, client);
-  showTSXOutputFeature.register(context, client);
-  fileReferencesFeature.register(client);
+  autoInsertionFeature.register(client);
+  fileReferencesFeature.register('astro.findFileReferences', client);
+  reloadProjectFeature.register('astro.reloadProject', context, client);
 }
