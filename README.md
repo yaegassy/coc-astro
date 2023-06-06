@@ -56,8 +56,8 @@ In this case, please execute the command to restart the language server.
 - `astro.useWorkspaceTsdk`: Use workspace (project) detected tsLibs in astro. if false, use coc-astro's built-in tsLibs, default: `false`
 - `astro.autoCreateQuotes`: Enable/disable auto creation of quotes for HTML attribute assignment, default: `true`
 - `astro.autoClosingTags`: Enable/disable autoClosing of HTML tags, default: `true`
-
-Other settings have the same configuration as [astro-vscode](https://github.com/withastro/language-tools/tree/main/packages/vscode). Check the configuration section of [package.json](./package.json).
+- `astro.language-server.ls-path`: Path to the language server executable. You won't need this in most cases, set this only when needing a specific version of the language server, default: `null`
+- `astro.language-server.runtime`: Path to the node executable used to execute the language server. You won't need this in most cases, default: `null`
 
 ## Commands
 
