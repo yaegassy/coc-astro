@@ -14,6 +14,7 @@ import * as path from 'path';
 
 import * as tsVersion from './features/tsVersion';
 import * as autoInsertionFeature from './features/autoInsertion';
+import * as fileReferencesFeature from './features/fileReferences';
 
 let serverModule: string;
 
@@ -68,4 +69,5 @@ export async function activate(context: ExtensionContext): Promise<void> {
   client.start();
 
   autoInsertionFeature.register(client);
+  fileReferencesFeature.register('astro.findFileReferences', client);
 }
