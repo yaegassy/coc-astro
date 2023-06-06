@@ -54,7 +54,6 @@ In this case, please execute the command to restart the language server.
 
 - `astro.enable`: Enable coc-astro extension, default: `true`
 - `astro.useWorkspaceTsdk`: Use workspace (project) detected tsLibs in astro. if false, use coc-astro's built-in tsLibs, default: `false`
-- `astro.tsLocale`: Sets the locale used to report diagnostics message from typescript, valid option: `["cs", "de", "es", "fr", "it", "ja", "ko", "en", "pl", "pt-br", "ru", "tr", "zh-cn", "zh-tw"]`, default: `"en"`
 - `astro.autoCreateQuotes`: Enable/disable auto creation of quotes for HTML attribute assignment, default: `true`
 - `astro.autoClosingTags`: Enable/disable autoClosing of HTML tags, default: `true`
 
