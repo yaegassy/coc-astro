@@ -18,12 +18,6 @@ export async function register(client: LanguageClient) {
 
   const supportedLanguages: Record<string, boolean> = {
     astro: true,
-    vue: true,
-    markdown: true,
-    javascript: true,
-    typescript: true,
-    javascriptreact: true,
-    typescriptreact: true,
   };
 
   let disposables: Disposable[] = [];
