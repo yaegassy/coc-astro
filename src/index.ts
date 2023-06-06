@@ -13,6 +13,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import * as tsVersion from './features/tsVersion';
+import * as autoInsertionFeature from './features/autoInsertion';
 
 let serverModule: string;
 
@@ -65,4 +66,6 @@ export async function activate(context: ExtensionContext): Promise<void> {
   const client = new LanguageClient('astro', 'Astro', serverOptions, clientOptions);
 
   client.start();
+
+  autoInsertionFeature.register(client);
 }
