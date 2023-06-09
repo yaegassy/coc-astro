@@ -31,10 +31,10 @@
     vscode-html-languageservice "^5.0.6"
     vscode-uri "^3.0.7"
 
-"@astrojs/ts-plugin@1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.0.8.tgz#2665fea12ab58203a2f512f28f1e25be19eee086"
-  integrity sha512-i6E4RNEcEYzMII+D+YM2AJhzAqWgyfHLSvzUpaCuEObDNgniqDujfSdPohLUAJQ6LXx9Sv5/wsZcxTmXmbV6Xg==
+"@astrojs/ts-plugin@1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.0.9.tgz#0893a54736896a17325ce59195a0a515f5bc2fa1"
+  integrity sha512-KtbToBgN9iBPJe39jhiVbxQC2rkAYxXmwaubpcoLRnj9wT1Upj7kNe6+KK8u8QYw+yCQsjPOVSjvuCEdiDkjdQ==
   dependencies:
     "@astrojs/compiler" "^1.5.1"
     "@jridgewell/trace-mapping" "^0.3.18"
