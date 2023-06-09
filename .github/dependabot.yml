@@ -6,3 +6,4 @@ updates:
       interval: daily
     allow:
       - dependency-name: "@astrojs/language-server"
+      - dependency-name: "@astrojs/ts-plugin"
