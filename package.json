@@ -139,7 +139,7 @@
   },
   "dependencies": {
     "@astrojs/language-server": "2.0.17",
-    "@astrojs/ts-plugin": "1.0.9",
+    "@astrojs/ts-plugin": "1.0.10",
     "typescript": "5.0.4"
   }
 }
