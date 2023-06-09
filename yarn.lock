@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@astrojs/compiler@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.4.2.tgz#6480154a933acd4c79ccd703567ac5fe4a3a96a3"
-  integrity sha512-xoRp7JpiMZPK/beUcZEM5kM44Z/h20wwwQcl54duPqQMyySG9vZ5xMM6dYiQmn7b3XzpZs0cT6TRDoJJ5gwHAQ==
-
 "@astrojs/compiler@^1.5.1":
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.5.1.tgz#cd2e2c33721d7c7f345052c50a8d4fd047b91e2c"
@@ -36,13 +31,13 @@
     vscode-html-languageservice "^5.0.6"
     vscode-uri "^3.0.7"
 
-"@astrojs/ts-plugin@1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.0.7.tgz#a454fde9b9c5017de42a2ae70a7ebd0222470505"
-  integrity sha512-5uDZ0I5tp8gsmnyiekodJQHZGLhCgFKTWekFCJh0KgMh2H5VqGKe4JzLeyk4J6fhH+F/sA3mYm9YCcVyayVlsw==
+"@astrojs/ts-plugin@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.0.8.tgz#2665fea12ab58203a2f512f28f1e25be19eee086"
+  integrity sha512-i6E4RNEcEYzMII+D+YM2AJhzAqWgyfHLSvzUpaCuEObDNgniqDujfSdPohLUAJQ6LXx9Sv5/wsZcxTmXmbV6Xg==
   dependencies:
-    "@astrojs/compiler" "^1.4.2"
-    "@jridgewell/trace-mapping" "^0.3.15"
+    "@astrojs/compiler" "^1.5.1"
+    "@jridgewell/trace-mapping" "^0.3.18"
 
 "@emmetio/abbreviation@^2.3.3":
   version "2.3.3"
@@ -239,7 +234,7 @@
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz#d7c6e6755c78567a951e04ab52ef0fd26de59f32"
   integrity sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==
 
-"@jridgewell/trace-mapping@^0.3.15":
+"@jridgewell/trace-mapping@^0.3.18":
   version "0.3.18"
   resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.18.tgz#25783b2086daf6ff1dcb53c9249ae480e4dd4cd6"
   integrity sha512-w+niJYzMHdd7USdiH2U6869nqhD2nbfZXND5Yp93qIbEmnDNk7PD48o+YchRVpzMU7M6jVCbenTR7PA1FLQ9pA==
