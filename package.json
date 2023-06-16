@@ -48,7 +48,6 @@
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.8",
     "rimraf": "^3.0.2"
   },
   "activationEvents": [
@@ -140,6 +139,7 @@
   "dependencies": {
     "@astrojs/language-server": "2.0.17",
     "@astrojs/ts-plugin": "1.0.10",
+    "prettier": "^2.8.8",
     "typescript": "5.0.4"
   }
 }
