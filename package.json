@@ -141,6 +141,6 @@
     "@astrojs/ts-plugin": "1.1.0",
     "prettier": "^3.0.0",
     "prettier-plugin-astro": "^0.10.0",
-    "typescript": "5.0.4"
+    "typescript": "5.1.3"
   }
 }
