@@ -29,7 +29,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
     serverModule = serverPath;
   } else {
     serverModule = context.asAbsolutePath(
-      path.join('node_modules', '@astrojs', 'language-server', 'bin', 'nodeServer.js')
+      path.join('node_modules', '@astrojs', 'language-server', 'bin', 'nodeServer.js'),
     );
   }
 
