@@ -57,7 +57,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
 
   const initializationOptions: InitializationOptions = {
     typescript: tsVersion.getCurrentTsPaths(context),
-    diagnosticModel: DiagnosticModel.Pull,
+    diagnosticModel: DiagnosticModel.Push,
   };
 
   const clientOptions: LanguageClientOptions = {
