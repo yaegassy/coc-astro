@@ -1,6 +1,6 @@
 {
   "name": "@yaegassy/coc-astro",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Astro extension for coc.nvim",
   "author": "yaegassy <yosstools@gmail.com>",
   "license": "MIT",
