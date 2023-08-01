@@ -17,10 +17,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.5.1.tgz#cd2e2c33721d7c7f345052c50a8d4fd047b91e2c"
   integrity sha512-iIGKu/uzB8sJ5VveQf0eHrVPPFEcrvSlp4qShYMOuY2aMmK2RVXQlX9dUjtmBQ+NAokfIOb7fwCutvH+p13l+g==
 
-"@astrojs/language-server@2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.1.4.tgz#d0869752a191def69db1cecee399f5e9a05971c0"
-  integrity sha512-xJHm6tnhksRfJKYMPAd+vA9OEGhXtcJ1+MCNdxJFttx5zbFJQFBuaQGyYZmnf0DZZnIjZbcFiTTV1ATVnxgAcw==
+"@astrojs/language-server@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.2.0.tgz#6812b917d430d567c846aa97da72aa5a53439de0"
+  integrity sha512-zyEumkwcep3pGyMpcEJFEn96jV6pEg3CUtjehnT9KseDFqf+gPYTbw5nwOpN9uXIJ/E5bAxhqpkr3J2LCQHRrg==
   dependencies:
     "@astrojs/compiler" "1.5.7"
     "@jridgewell/sourcemap-codec" "^1.4.15"
