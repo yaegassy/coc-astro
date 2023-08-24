@@ -41,10 +41,10 @@
     vscode-html-languageservice "^5.0.6"
     vscode-uri "^3.0.7"
 
-"@astrojs/ts-plugin@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.1.2.tgz#3be062699e3a6291a1e20d9a1e9c47d319cfc168"
-  integrity sha512-h+XAKnPoo6idLRaBx5F5InBk8U7U9hSv8tsZuhM9CjzuR5JPzf88PNhO7vl4HWpqR1YsUi9pgwpUq8C3HBSpng==
+"@astrojs/ts-plugin@1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.1.3.tgz#1380c96416a2b021d7a87db82da8b7679185d98a"
+  integrity sha512-nErNpgHGMzOOBHmUdml3cEZv4nxowGpO4G+IfAsPBQXOKLLGbVXzNpIGrdIthk3ryGD3jsYOKBvv2/PrnTkRdA==
   dependencies:
     "@astrojs/compiler" "1.5.7"
     "@jridgewell/sourcemap-codec" "^1.4.15"
