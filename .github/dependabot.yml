@@ -7,3 +7,4 @@ updates:
     allow:
       - dependency-name: "@astrojs/language-server"
       - dependency-name: "@astrojs/ts-plugin"
+      - dependency-name: "prettier-plugin-astro"
