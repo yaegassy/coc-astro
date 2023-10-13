@@ -80,6 +80,11 @@
           "default": true,
           "description": "Enable coc-astro extension."
         },
+        "astro.disableResolveCompletionItem": {
+          "type": "boolean",
+          "default": false,
+          "description": "Disable completionItem/resolve feature."
+        },
         "astro.useWorkspaceTsdk": {
           "type": "boolean",
           "default": false,
