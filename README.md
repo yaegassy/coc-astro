@@ -70,7 +70,7 @@ Please note that if this setting is set to `true`, feature such as "auto-import"
 ## Configuration options
 
 - `astro.enable`: Enable coc-astro extension, default: `true`
-- `astro.disableResolveCompletionItem`: Disable completionItem/resolve feature, default: `false`
+- `astro.disableResolveCompletionItem`: Disable `completionItem/resolve` feature, default: `false`
 - `astro.useWorkspaceTsdk`: Use workspace (project) detected tsLibs in astro. if false, use coc-astro's built-in tsLibs, default: `false`
 - `astro.autoCreateQuotes`: Enable/disable auto creation of quotes for HTML attribute assignment, default: `true`
 - `astro.autoClosingTags`: Enable/disable autoClosing of HTML tags, default: `true`
