@@ -50,9 +50,27 @@ In this case, please execute the command to restart the language server.
 
 - `:CocRestart`
 
+## Dealing with text corruption when determining completion item
+
+coc-astro provides a setting called `astro.disableResolveCompletionItem`. Set this setting to `true` in `coc-settings.json`. The default is `false`.
+
+Please note that if this setting is set to `true`, feature such as "auto-import" upon completion item determination will not work.
+
+**coc-settings.json**:
+
+```json
+{
+  "astro.disableResolveCompletionItem": true
+}
+```
+
+- Related issues in upstream
+  - <https://github.com/withastro/language-tools/issues/664>
+
 ## Configuration options
 
 - `astro.enable`: Enable coc-astro extension, default: `true`
+- `astro.disableResolveCompletionItem`: Disable completionItem/resolve feature, default: `false`
 - `astro.useWorkspaceTsdk`: Use workspace (project) detected tsLibs in astro. if false, use coc-astro's built-in tsLibs, default: `false`
 - `astro.autoCreateQuotes`: Enable/disable auto creation of quotes for HTML attribute assignment, default: `true`
 - `astro.autoClosingTags`: Enable/disable autoClosing of HTML tags, default: `true`

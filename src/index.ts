@@ -63,6 +63,15 @@ export async function activate(context: ExtensionContext): Promise<void> {
   const clientOptions: LanguageClientOptions = {
     documentSelector: [{ language: 'astro' }],
     initializationOptions,
+    middleware: {
+      resolveCompletionItem(item, token, next) {
+        // REF: https://github.com/withastro/language-tools/issues/664
+        if (workspace.getConfiguration('astro').get<boolean>('disableResolveCompletionItem')) {
+          return item;
+        }
+        return next(item, token);
+      },
+    },
   };
 
   const client = new LanguageClient('astro', 'Astro', serverOptions, clientOptions);
