@@ -17,10 +17,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.8.2.tgz#f305d5724c45a9932a8ef4e87b2e7227d15d1c2b"
   integrity sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==
 
-"@astrojs/language-server@2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.4.0.tgz#ccdd155bf1ab9a222b8db233681b82c04c04d09d"
-  integrity sha512-L5lbTt1zZiCYGxahGhbJ1m2THaZxBBuA3MrwvhwZ+xVy6/k13W0Xy4nVe0gUBoCizZdKEDL3puoW615waJaTBQ==
+"@astrojs/language-server@2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.4.1.tgz#418cc9f90c83e960572bf54dd311bfb16f913019"
+  integrity sha512-+yHvvcLcyfr1kq2UsQ4/b84EhQo3450MZGRhIA+aw7/1BrJVjWiyOrBi4nVLVyBq8i4a5qIU+MsYu3HdS7kWwQ==
   dependencies:
     "@astrojs/compiler" "1.5.7"
     "@jridgewell/sourcemap-codec" "^1.4.15"
@@ -1489,6 +1489,7 @@ slash@^3.0.0:
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
