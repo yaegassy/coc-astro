@@ -17,12 +17,17 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.8.2.tgz#f305d5724c45a9932a8ef4e87b2e7227d15d1c2b"
   integrity sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==
 
-"@astrojs/language-server@2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.4.1.tgz#418cc9f90c83e960572bf54dd311bfb16f913019"
-  integrity sha512-+yHvvcLcyfr1kq2UsQ4/b84EhQo3450MZGRhIA+aw7/1BrJVjWiyOrBi4nVLVyBq8i4a5qIU+MsYu3HdS7kWwQ==
+"@astrojs/compiler@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-2.2.1.tgz#1403f270e40e14043b7cf16d8e18083537348bda"
+  integrity sha512-NJ1lWKzMkyEjE3W5NpPNAVot4/PLF5om/P6ekxNu3iLS05CaYFTcp7WpYMjdCC252b7wkNVAs45FNkVQ+RHW/g==
+
+"@astrojs/language-server@2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.5.1.tgz#f05dc91b72d39a280776f7b048714bd171ec317f"
+  integrity sha512-CBSGC3lsGnauVloVWq7+8N8F+IRsyiVe/3WevYf0TmmO8aPhmSzbAAF3vhYWfja3/HLtwNJsm6ltfRkMyYOyaQ==
   dependencies:
-    "@astrojs/compiler" "1.5.7"
+    "@astrojs/compiler" "^2.2.1"
     "@jridgewell/sourcemap-codec" "^1.4.15"
     "@volar/kit" "~1.10.3"
     "@volar/language-core" "~1.10.3"
