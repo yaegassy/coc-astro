@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.10.7",
-    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^6.18.1",
     "coc.nvim": "0.0.83-next.17",
     "esbuild": "^0.16.17",
