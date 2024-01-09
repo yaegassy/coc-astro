@@ -12,11 +12,6 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.8.2.tgz#f305d5724c45a9932a8ef4e87b2e7227d15d1c2b"
   integrity sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==
 
-"@astrojs/compiler@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-2.2.2.tgz#3f5fb8f8fdfb26ab65fc3f00255b214c0a211c32"
-  integrity sha512-nJaEgq0EP1mybaW1PvNnnp4RxVQnaLajUYnqrqxFbIdu1ELbH6OxNuAJWI+/q9TbMP6NG/eK6WRMhQsxX6qkUQ==
-
 "@astrojs/compiler@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-2.4.0.tgz#75c46e2243d69f3234d8a8dfdbcacc121e7d678c"
@@ -46,12 +41,12 @@
     vscode-html-languageservice "^5.1.0"
     vscode-uri "^3.0.8"
 
-"@astrojs/ts-plugin@1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.3.1.tgz#92e754f1dff0ff5fd02710f6a61f7b5811eefe4d"
-  integrity sha512-Q6d7XzDS8L77U38vrnl4Uwp2IkrcRn7eb/VIGDgRVwzWcV8vJsg8nSf7Av7fQOgYQ09ezZODYQKGNx9uK9KCgw==
+"@astrojs/ts-plugin@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.4.0.tgz#e1317748bc6fc3364ce9927c9ba3a1cfa8b98330"
+  integrity sha512-QfqzM7S8MVlM0jQS1iUS2q6zB00MaGILR0Yc2OjvnveS01+vl62MQqs87unNAXpG1walcIWLc0mTCsfd3GCzMg==
   dependencies:
-    "@astrojs/compiler" "^2.2.2"
+    "@astrojs/compiler" "^2.4.0"
     "@jridgewell/sourcemap-codec" "^1.4.15"
     "@volar/language-core" "~1.10.9"
     "@volar/typescript" "~1.10.9"
