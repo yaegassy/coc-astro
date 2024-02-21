@@ -142,7 +142,7 @@
     ]
   },
   "dependencies": {
-    "@astrojs/language-server": "2.7.4",
+    "@astrojs/language-server": "2.7.5",
     "@astrojs/ts-plugin": "1.5.2",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
