@@ -90,7 +90,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
 
   client.start();
 
-  autoInsertionFeature.register(client);
+  autoInsertionFeature.activate(['astro'], client);
   fileReferencesFeature.register('astro.findFileReferences', client);
   reloadProjectFeature.register('astro.reloadProject', context, client);
 }

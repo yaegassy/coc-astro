@@ -1,24 +1,21 @@
 import {
   Disposable,
-  events,
+  DocumentSelector,
   LanguageClient,
   Position,
   Range,
-  snippetManager,
   SnippetString,
   TextDocument,
   TextEdit,
+  events,
+  snippetManager,
   workspace,
 } from 'coc.nvim';
 import { TextDocumentContentChangeEvent } from 'vscode-languageserver-protocol';
 import { AutoInsertRequestType } from '../requestTypes';
 
-export async function register(client: LanguageClient) {
+export async function activate(_selectors: DocumentSelector, client: LanguageClient) {
   await client.onReady();
-
-  const supportedLanguages: Record<string, boolean> = {
-    astro: true,
-  };
 
   let disposables: Disposable[] = [];
   let isEnabled = false;
@@ -52,6 +49,14 @@ export async function register(client: LanguageClient) {
 
     const document = workspace.getDocument(bufnr);
     if (!document || !document.attached) return;
+
+    // MEMO: coc.nvim does not have `languages.match`, so I used a different way.
+    ////if (!languages.match(selectors, document)) {
+    ////	return;
+    ////}
+    const supportedLanguages: Record<string, boolean> = {
+      astro: true,
+    };
     if (!supportedLanguages[document.textDocument.languageId]) {
       return;
     }
@@ -97,11 +102,11 @@ export async function register(client: LanguageClient) {
     if (lastCharacter === '/') return;
 
     if (!workspace.getConfiguration('astro').get<boolean>('autoClosingTags')) {
-      if (lastCharacter === '>') return;
+      if (lastCharacter.endsWith('>')) return;
     }
 
     if (!workspace.getConfiguration('astro').get<boolean>('autoCreateQuotes')) {
-      if (lastCharacter === '=') return;
+      if (lastCharacter.endsWith('=')) return;
     }
 
     if (lastCharacter === undefined) {
@@ -120,17 +125,15 @@ export async function register(client: LanguageClient) {
       const params = {
         textDocument: { uri: document.uri },
         position,
-        options: {
-          lastChange: {
-            ...lastChange,
-            range: lastChange['range'],
-          },
+        lastChange: {
+          text: lastChange.text,
+          range: lastChange['range'],
         },
       };
 
-      const result = await client.sendRequest(AutoInsertRequestType.method, params);
+      const result = await client.sendRequest<TextEdit>(AutoInsertRequestType.method, params);
 
-      if (typeof result === 'string') {
+      if (typeof result === 'string' || typeof result === 'object') {
         return result;
       } else {
         return undefined;
@@ -160,10 +163,10 @@ export async function register(client: LanguageClient) {
           const activeDocument = doc.textDocument;
           if (document.uri === activeDocument.uri && activeDocument.version === version) {
             if (typeof text === 'string') {
-              if (lastChange.text === '>' || lastChange.text.endsWith('>')) {
+              if (lastChange.text.endsWith('>')) {
                 // autoClosingTags
                 snippetManager.insertSnippet(text, true, Range.create(position, position));
-              } else if (lastChange.text === '=' || text === '"$1"') {
+              } else if (lastChange.text.endsWith('=') || text === '"$1"') {
                 // autoCreateQuotes
                 snippetManager.insertSnippet(text, true, Range.create(position, position));
               } else {
