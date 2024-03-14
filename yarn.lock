@@ -17,10 +17,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-2.7.0.tgz#023799f2fefd2aa8579ea6f802226387e5922f74"
   integrity sha512-XpC8MAaWjD1ff6/IfkRq/5k1EFj6zhCNqXRd5J43SVJEBj/Bsmizkm8N0xOYscGcDFQkRgEw6/eKnI5x/1l6aA==
 
-"@astrojs/language-server@2.8.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.8.0.tgz#811184fb932cb3e3a53721b760ed186792416018"
-  integrity sha512-WFRwvsWNCQ2I+DEJzRkF/uX0LeJN/oGabr0hnwec8alQzHbzyoqogHmE+i+cU8Mb34ouwsLXa/LlqjEqFbkSZw==
+"@astrojs/language-server@2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/language-server/-/language-server-2.8.2.tgz#a1c0ca51035a8b136fe796ed94058964fcf72940"
+  integrity sha512-8BfOqx4kYSZqLxpXezryoblg1z4ufgWAh7Y9iT/3g8sUzG1jE1MVdwxXixRbsOu9X4bgLDLMwbOgXp63Fbd/zA==
   dependencies:
     "@astrojs/compiler" "^2.7.0"
     "@jridgewell/sourcemap-codec" "^1.4.15"
@@ -30,12 +30,12 @@
     "@volar/language-service" "~2.1.2"
     "@volar/typescript" "~2.1.2"
     fast-glob "^3.2.12"
-    volar-service-css "0.0.31"
-    volar-service-emmet "0.0.31"
-    volar-service-html "0.0.31"
-    volar-service-prettier "0.0.31-patch.1"
-    volar-service-typescript "0.0.31"
-    volar-service-typescript-twoslash-queries "0.0.31"
+    volar-service-css "0.0.33"
+    volar-service-emmet "0.0.33"
+    volar-service-html "0.0.33"
+    volar-service-prettier "0.0.33"
+    volar-service-typescript "0.0.33"
+    volar-service-typescript-twoslash-queries "0.0.33"
     vscode-html-languageservice "^5.1.2"
     vscode-uri "^3.0.8"
 
@@ -1441,48 +1441,48 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-volar-service-css@0.0.31:
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/volar-service-css/-/volar-service-css-0.0.31.tgz#a4fe699f3f22bedf62f04212d2335b31e20ecb67"
-  integrity sha512-YDY+qwqYipkXVwh63f9Lk7x/48j9lsxVeXj9lsj5Fp1VAwpPoVpWQhAq3oNp3my9gyS8lEbdIPl0rJzBcJCuUA==
+volar-service-css@0.0.33:
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/volar-service-css/-/volar-service-css-0.0.33.tgz#e901c33e28c1f07f0193c48e7fe76185a4d4657a"
+  integrity sha512-CQt4s/3ltH8clGD+GNkztKLLsifHDO9/2VTibgyj/os90uHJ/b4uiY0F0XbyEj493M9c10xhl+It6quLt2Vz1w==
   dependencies:
     vscode-css-languageservice "^6.2.10"
     vscode-languageserver-textdocument "^1.0.11"
     vscode-uri "^3.0.8"
 
-volar-service-emmet@0.0.31:
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/volar-service-emmet/-/volar-service-emmet-0.0.31.tgz#7b6daab66e7df34f2465b20f5ee98e3a586b7658"
-  integrity sha512-d+KfC0axTB6Ku4v70So3GEqsEzrE9zifDvwnqHUrg+Bts05kCFlRgDCLziXmddKhtaaJJ6oSizHr7WcFUyesww==
+volar-service-emmet@0.0.33:
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/volar-service-emmet/-/volar-service-emmet-0.0.33.tgz#bfa675fde9ffc7a7d2cf3306cc2c942431d17d2b"
+  integrity sha512-wPsqD7YXArQo7IIEfZJ2kbKWBtqsIUsF0Hjqm9xwQnsuOzahGRNw/VxCJggLt+AjiK0c/ucCvaNTb8j0SPTiOQ==
   dependencies:
     "@vscode/emmet-helper" "^2.9.2"
     vscode-html-languageservice "^5.1.0"
 
-volar-service-html@0.0.31:
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/volar-service-html/-/volar-service-html-0.0.31.tgz#ee5c6f9a6126ca18b8c7c92b3fa28a9e931d7219"
-  integrity sha512-duMjl/VLvPWtmYsIAUtwYw/esFY3FWnVmH7537UpnfY9ncYTX/G43xmoVd+oQJPWh7xi8zwFeUQgZAA6T45Bhg==
+volar-service-html@0.0.33:
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/volar-service-html/-/volar-service-html-0.0.33.tgz#8032521c643e8f5fc0a483e1e6a678143470b12e"
+  integrity sha512-kthyHYcjOjREqTXg/rEPT8AascgjX+cuImHuu+IbHCTM0FnXGRT/vUfSp+f2l+k0tJkQHsx5NIv+xOxrrNv9Yg==
   dependencies:
     vscode-html-languageservice "^5.1.0"
     vscode-languageserver-textdocument "^1.0.11"
     vscode-uri "^3.0.8"
 
-volar-service-prettier@0.0.31-patch.1:
-  version "0.0.31-patch.1"
-  resolved "https://registry.yarnpkg.com/volar-service-prettier/-/volar-service-prettier-0.0.31-patch.1.tgz#b1b96d81db6ebca6010efcfd530b4535ebb80496"
-  integrity sha512-jj6cKOFhOEgMUUKwdx0QUX5f7gsS0SXNqF/9LWcWslnf4C1i8GkOH+lba2yVhPMwHzltJLQOhOL5QKKB1PvKUg==
+volar-service-prettier@0.0.33:
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/volar-service-prettier/-/volar-service-prettier-0.0.33.tgz#14d630e85995e2fb4256499fdfbecf3457521473"
+  integrity sha512-G4i4ugev284B0/sbfggxE6BQugbz8aWBrFbgMbihz9jZ5vC8HEYXT42Dm/8PITjsJTxQM6QtHzyqa6+Adb7VHQ==
   dependencies:
     vscode-uri "^3.0.8"
 
-volar-service-typescript-twoslash-queries@0.0.31:
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/volar-service-typescript-twoslash-queries/-/volar-service-typescript-twoslash-queries-0.0.31.tgz#8d97c9b6b793f00a3c268e5b8cc82dca51119fac"
-  integrity sha512-NsI1izFST7H6GN7WQow/GEPykPLGt0zlIJl+05bX9W6pXY8kD6PUSz7U+v5TSbUMMmjFFn8IkAAHopbH11OWrA==
+volar-service-typescript-twoslash-queries@0.0.33:
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/volar-service-typescript-twoslash-queries/-/volar-service-typescript-twoslash-queries-0.0.33.tgz#8177c6426c478c4d66fd591be0569056b0526c69"
+  integrity sha512-wJXrLYzh8OmUe3qP9s6tnNFFieUk2ELdH+8pzBZLCvZM2hjMTr9TejAoYFpZbxLKeKi7ZtJbvkEsYsOJkLyiSA==
 
-volar-service-typescript@0.0.31:
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/volar-service-typescript/-/volar-service-typescript-0.0.31.tgz#8abe56250d8ed8859a0859b36526928bed1a6f9f"
-  integrity sha512-gaSsX0NmWgENPx6KrHcj+Xru4iQWDpt1kLJcWYNJZ5XaMawYFlVXjWGX/lCO6P7AoLoc2NQnTYUpgTfTjbqdaQ==
+volar-service-typescript@0.0.33:
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/volar-service-typescript/-/volar-service-typescript-0.0.33.tgz#8dd4d62fbdd69ae88d9f9219c1f5fec6d1089775"
+  integrity sha512-ZHk4DXQAcYUMWMkpYzN6Aver2SahOGQ2KsEZDZKaKm2WWKaAP3TWAnDLa+t2rr1HlUz95n7liUW5qE0cDo/cuw==
   dependencies:
     path-browserify "^1.0.1"
     semver "^7.5.4"
