@@ -39,15 +39,15 @@
     vscode-html-languageservice "^5.1.2"
     vscode-uri "^3.0.8"
 
-"@astrojs/ts-plugin@1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.6.1.tgz#00dbd36116e08f3bfa6351266e11208a2c90d6d8"
-  integrity sha512-13mkBo5K3J/mUN/pt/4qxbwBJSmm/X2HAzOZaYg2AildnN/JxiZ2rm60LMssUXhHHhrxQoKslCh06l9sHSkCMQ==
+"@astrojs/ts-plugin@1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/ts-plugin/-/ts-plugin-1.7.0.tgz#5feb6dcbbe6d034c16157b4313319f8d66f00be4"
+  integrity sha512-AKsjdQMp5LUGSJAwBGiutFhk7dUeI1FFEza9b7pOHE9j7OTr9JNaSAL2gnSpLieiL2xPm8LOWQ3OCPfzHHerbQ==
   dependencies:
     "@astrojs/compiler" "^2.7.0"
     "@jridgewell/sourcemap-codec" "^1.4.15"
-    "@volar/language-core" "~2.1.5"
-    "@volar/typescript" "~2.1.5"
+    "@volar/language-core" "~2.2.1"
+    "@volar/typescript" "~2.2.1"
     semver "^7.3.8"
     vscode-languageserver-textdocument "^1.0.11"
 
@@ -405,6 +405,13 @@
   dependencies:
     "@volar/source-map" "2.1.5"
 
+"@volar/language-core@2.2.1", "@volar/language-core@~2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@volar/language-core/-/language-core-2.2.1.tgz#bb4a28f93cd8598a2e2ca1c811ae113a848b5529"
+  integrity sha512-iHJAZKcYldZgyS8gx6DfIZApViVBeqbf6iPhqoZpG5A6F4zsZiFldKfwaKaBA3/wnOTWE2i8VUbXywI1WywCPg==
+  dependencies:
+    "@volar/source-map" "2.2.1"
+
 "@volar/language-server@~2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@volar/language-server/-/language-server-2.1.5.tgz#d8cbca13e4999b1f352182d29cb24934ededf901"
@@ -447,12 +454,27 @@
   dependencies:
     muggle-string "^0.4.0"
 
+"@volar/source-map@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@volar/source-map/-/source-map-2.2.1.tgz#d75b0c38659d3ea7e780d4251ac2b9436845ab97"
+  integrity sha512-w1Bgpguhbp7YTr7VUFu6gb4iAZjeEPsOX4zpgiuvlldbzvIWDWy4t0jVifsIsxZ99HAu+c3swiME7wt+GeNqhA==
+  dependencies:
+    muggle-string "^0.4.0"
+
 "@volar/typescript@2.1.5", "@volar/typescript@~2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@volar/typescript/-/typescript-2.1.5.tgz#756a8626af1c5ce3c9d8df3e79d49bfdd0adf39e"
   integrity sha512-zo9a3NrNMSkufIvHuExDGTfYv+zO7C5p2wg8fyP7vcqF/Qo0ztjb0ZfOgq/A85EO/MBc1Kj2Iu7PaOBtP++NMw==
   dependencies:
     "@volar/language-core" "2.1.5"
+    path-browserify "^1.0.1"
+
+"@volar/typescript@~2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@volar/typescript/-/typescript-2.2.1.tgz#21585b46cd61c9d63715642ee10418b144b12321"
+  integrity sha512-Z/tqluR7Hz5/5dCqQp7wo9C/6tSv/IYl+tTzgzUt2NjTq95bKSsuO4E+V06D0c+3aP9x5S9jggLqw451hpnc6Q==
+  dependencies:
+    "@volar/language-core" "2.2.1"
     path-browserify "^1.0.1"
 
 "@vscode/emmet-helper@^2.9.2":
@@ -1318,8 +1340,16 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
-  name string-width-cjs
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+string-width@^4.1.0:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -1337,7 +1367,14 @@ string-width@^5.0.1, string-width@^5.1.2:
     emoji-regex "^9.2.2"
     strip-ansi "^7.0.1"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
