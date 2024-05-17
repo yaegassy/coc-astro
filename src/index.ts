@@ -7,7 +7,7 @@ import {
   LanguageClientOptions,
 } from 'coc.nvim';
 
-import { DiagnosticModel, InitializationOptions } from '@volar/language-server';
+import { InitializationOptions } from '@volar/language-server';
 
 type InitOptions = InitializationOptions & {
   typescript: {
@@ -63,13 +63,6 @@ export async function activate(context: ExtensionContext): Promise<void> {
 
   const initializationOptions: InitOptions = {
     typescript: tsVersion.getCurrentTsPaths(context),
-    // MEMO: I currently have it set to `DiagnosticModel.Pull`, because
-    // it crashes after the language server starts if coc.nvim is not
-    // very up-to-date.
-    //
-    // https://github.com/neoclide/coc.nvim/commit/dd4a5fa5a643bd78d808185c190b557343e82703
-    ////diagnosticModel: DiagnosticModel.Push,
-    diagnosticModel: DiagnosticModel.Pull,
   };
 
   const clientOptions: LanguageClientOptions = {
