@@ -135,7 +135,7 @@
     "@astrojs/language-server": "2.11.0",
     "@astrojs/ts-plugin": "1.9.0",
     "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-astro": "^0.14.0",
     "typescript": "5.3.3"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
