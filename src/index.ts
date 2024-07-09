@@ -7,9 +7,7 @@ import {
   LanguageClientOptions,
 } from 'coc.nvim';
 
-import { InitializationOptions } from '@volar/language-server';
-
-type InitOptions = InitializationOptions & {
+type InitOptions = {
   typescript: {
     tsdk: string;
   };
