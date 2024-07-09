@@ -72,8 +72,6 @@ Please note that if this setting is set to `true`, feature such as "auto-import"
 - `astro.enable`: Enable coc-astro extension, default: `true`
 - `astro.disableResolveCompletionItem`: Disable `completionItem/resolve` feature, default: `false`
 - `astro.useWorkspaceTsdk`: Use workspace (project) detected tsLibs in astro. if false, use coc-astro's built-in tsLibs, default: `false`
-- `astro.autoCreateQuotes`: Enable/disable auto creation of quotes for HTML attribute assignment, default: `true`
-- `astro.autoClosingTags`: Enable/disable autoClosing of HTML tags, default: `true`
 - `astro.language-server.ls-path`: Path to the language server executable. You won't need this in most cases, set this only when needing a specific version of the language server, default: `null`
 - `astro.language-server.runtime`: Path to the node executable used to execute the language server. You won't need this in most cases, default: `null`
 - `astro.trace.server`: Traces the communication between coc.nvim and the language server, valid option: `["off", "messages", "verbose"]`, default: `"off"`

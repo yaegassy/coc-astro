@@ -90,16 +90,6 @@
           "default": false,
           "description": "Use workspace (project) detected tsLibs in astro. if false, use coc-astro's built-in tsLibs."
         },
-        "astro.autoCreateQuotes": {
-          "type": "boolean",
-          "default": true,
-          "description": "Enable/disable auto creation of quotes for HTML attribute assignment."
-        },
-        "astro.autoClosingTags": {
-          "type": "boolean",
-          "default": true,
-          "description": "Enable/disable autoClosing of HTML tags."
-        },
         "astro.language-server.ls-path": {
           "type": "string",
           "title": "Language Server: Path",
